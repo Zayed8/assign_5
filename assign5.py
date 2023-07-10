@@ -1,0 +1,20 @@
+list = []
+nums = int(input("Enter the number of Elements to be passed in the List :"))
+for i in range(0,nums):
+        elements = int(input("Nos :"))
+        list.append(elements)
+print(list)
+print("Sum of the elements in List is: ",sum(list))
+print("Smallest element of the List is: ",min(list))
+print("Largest element of the List is: ",max(list))
+print("Displaying the List in Ascending order: ")
+list.sort()
+print(list)
+print("Displaying the List in Descending order: ")
+list.sort(reverse = True)
+print(list)
+print("Conversion of List to Tuple: ")
+print(tuple(list))
+print("Deletion of List: ")
+del list
+print("List Deleted successfully",list)
